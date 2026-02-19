@@ -433,6 +433,11 @@
     <ul>
       <li>A working prototype of a <strong style="color:var(--text);">Git-native suggestion flow</strong> that can propose changes as real Git diffs/commits, connected to a sandbox so it can run AI-written code and validate results.</li>
       <li>Completed part of the development automation: the <strong style="color:var(--text);">cc-verify</strong> project plus our <strong style="color:var(--text);">SKILL framework</strong>. This lets us test the voice layer by creating test scenarios on the fly and running them through automation.</li>
+      <li>We are explicitly aligning the product around the <strong style="color:var(--text);">co-founder vision: voice + memory + business context</strong>.</li>
+      <li>We are adding persistent <strong style="color:var(--text);">.agent-style memory</strong> so project context, decisions, and preferences carry across sessions.</li>
+      <li>Agent hosting has moved to <strong style="color:var(--text);">LiveKit Agents hosting</strong> for seamless deploys.</li>
+      <li>We deploy app-agent to LiveKit with CI using <code>lk agent deploy</code> (GitHub Action path) and target project: <a href="https://cloud.livekit.io/projects/p_58i4036imxe/agents" style="color:var(--orange);text-decoration:none;">LiveKit Agents Dashboard</a>.</li>
+      <li>The voice pipeline is being migrated to <strong style="color:var(--text);">LiveKit Inference</strong> to reduce latency.</li>
     </ul>
 
     <!-- Timeline -->
@@ -473,7 +478,7 @@
     </ul>
 
     <div class="summary">
-      "We're simplifying the architecture by letting the AI work like a real developer inside a real dev environment (Git + sandbox), and we already have an early prototype plus some automation for testing the voice layer."
+      "We're simplifying the architecture by letting the AI work like a real developer inside a real dev environment (Git + sandbox), while keeping the product anchored in the co-founder vision (voice + memory + business context), adding persistent .agent-style memory across sessions, and migrating voice/agent runtime to LiveKit hosting + LiveKit Inference for faster deployment and lower latency."
     </div>
   </section>
 
